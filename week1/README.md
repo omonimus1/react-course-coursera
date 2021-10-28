@@ -29,10 +29,26 @@ Frameworks: particular implementation of web application where our code fills in
 * JS Library for building User Interface, using Declarative approach, and being component based and technology stack agnostic (can be used independently from technology and approaches used to build our web app).
 
 
-## Therminology to learn :
+## Terminology to learn:
 * One way data flow:
+In ReactJS, data flows in one direction, from Parent to Child. Consider React components as simple functions that receive props and state and return HTML. When child components receive props from their parents, they either apply modifications (render) or pass it to another child that may use it.
+
+
 * JSX:
-* Components:
+
+* Components: Components are independent and reusable bits of code. They serve the same purpose as JavaScript functions, but work in isolation and return HTML.
+```
+class Car extends React.Component {
+  render() {
+    return <h2>Hi, I am a Car!</h2>;
+  }
+}
+
+function CarExample() {
+  return <h2>Hi, I am a Car!</h2>;
+}
+```
+
 * State:
 * Hooks:
 * Props:
